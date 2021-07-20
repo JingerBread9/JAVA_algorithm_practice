@@ -4,7 +4,7 @@ public class StringBasic {
     public boolean solution(String s) {
         boolean answer = true;
 
-        s = "a1234";
+        s = "12345678";
 
         if (s.length() == 4 || s.length() == 6) {
             if (s.matches("^[0-9]*$")) {
@@ -13,6 +13,10 @@ public class StringBasic {
             else {
                 answer = false;
             }
+        }
+
+        else {
+            answer = false;
         }
 
 
