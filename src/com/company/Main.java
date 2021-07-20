@@ -1,9 +1,17 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
+
 
     public static void main(String[] args) {
 
+
+
+/*
         String s = "토마스 뮐러(Thomas Muller)의 등번호는 25번입니다.";
 
         // contains() 함수
@@ -34,6 +42,8 @@ public class Main {
             System.out.println("matches() : 해당 문자열에는 숫자가 포함되어있지 않습니다.");
         }
 
+
+ */
         //자주 쓰는 정규식 패턴 모음
 //        숫자만 : ^[0-9]*$
 //        영문만 : ^[a-zA-Z]*$
@@ -50,8 +60,23 @@ public class Main {
 //        IP 주소 : ([0-9]{1,3}) \. ([0-9]{1,3}) \. ([0-9]{1,3}) \. ([0-9]{1,3})
 
 
-        //참고
-        //https://lnsideout.tistory.com/entry/JAVA-자바-특정-문자열-포함-확인-및-찾기containsindexofmatches
+
+        //입력받은 숫자를 n의 갯수만큼 출력하기
+
+
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        List<Integer> v1 = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            int value = sc.nextInt();
+            v1.add(value);
+
+        }
+        for (int i=0; i<n; i++) {
+            System.out.println(v1.get(i));
+        }
+
 
 
     }
